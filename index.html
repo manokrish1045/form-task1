@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Form and Table Example</title>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .form-group .form-check-input {
+            margin-right: 5px;
+        }
+
+        .submit-btn {
+            max-width: 100px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="text" class="form-control" id="pincode" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="male" name="gender" value="Male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Choice of Food (select at least 2):</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food1" name="food" value="Pizza" required>
+                    <label class="form-check-label" for="food1">Pizza</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food2" name="food" value="Burger" required>
+                    <label class="form-check-label" for="food2">Burger</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food3" name="food" value="Salad">
+                    <label class="form-check-label" for="food3">Salad</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food4" name="food" value="Pasta">
+                    <label class="form-check-label" for="food4">Pasta</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food5" name="food" value="Sushi">
+                    <label class="form-check-label" for="food5">Sushi</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" class="form-control" id="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" class="form-control" id="country" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <table id="dataTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
